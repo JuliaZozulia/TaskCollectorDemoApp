@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">TaskCollector</string>
+    <string name="title">Municipal</string>
+    <string name="created">Created</string>
+    <string name="registered">Registered</string>
+    <string name="due_date">Due date</string>
+    <string name="responsible">Responsible</string>
+    <string name="placeholder">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean iaculis erat id sapien varius laoreet. In hac habitasse platea dictumst. Pellentesque nec porta nunc, nec facilisis lacus. Vivamus accumsan felis ante, quis faucibus elit efficitur eget.</string>
+    <string name="date_placeholder">20 березня 2016</string>
+    <string name="responsible_placeholder">Дніпропетровський МВК</string>
+    <string name="in_progress">in progress</string>
+    <string name="state_placeholder">В роботі</string>
+
+    <array name="picture_urls">
+        <item>
+            http://hdwallpaperbook.com/wp-content/gallery/flower-wallpapers/Orange+Flowers+wallpapers.jpg
+        </item>
+        <item>http://www.mrwallpaper.com/wallpapers/crocus-flower-1024x768.jpg</item>
+        <item>http://eskipaper.com/images/beautiful-pink-flowers-2.jpg</item>
+        <item>
+            http://newflowerwallpaper.com/download/free-download-flowers-images/free-download-flowers-images-23.jpg
+        </item>
+        <item>http://media1.santabanta.com/full1/Nature/Flowers/flowers-166a.jpg</item>
+        <item>http://wallpapers.leovacity.be/images/Beautiful_flowers_wallpaper.jpg</item>
+        <item>http://designurge.com/wp-content/uploads/2013/10/Chrysanthemum-0096.jpg</item>
+    </array>
+</resources>
