@@ -6,6 +6,7 @@
     android:focusable="true"
     android:focusableInTouchMode="true"
     android:orientation="vertical"
+    android:background="@color/colorBackground"
     tools:context="ua.juliazozulia.taskcollector.MainActivity">
 
     <ScrollView
@@ -33,7 +34,7 @@
                 android:paddingTop="@dimen/base_padding"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                 android:textColor="@android:color/white"
-                tools:text="@string/state_placeholder" />
+                tools:text="@string/in_progress" />
 
             <View style="@style/Divider" />
 

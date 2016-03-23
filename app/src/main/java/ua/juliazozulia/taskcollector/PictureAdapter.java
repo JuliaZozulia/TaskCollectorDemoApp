@@ -38,7 +38,7 @@ public class PictureAdapter extends RecyclerView.Adapter<PictureAdapter.ViewHold
     private List<String> mDataset; //I prefer List to Array as in real application user may add pictures
 
     public PictureAdapter(List<String> dataset) {
-        this.mDataset = dataset;
+        mDataset = dataset;
     }
 
     @Override

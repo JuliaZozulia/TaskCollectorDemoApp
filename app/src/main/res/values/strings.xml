@@ -9,7 +9,11 @@
     <string name="date_placeholder">20 березня 2016</string>
     <string name="responsible_placeholder">Дніпропетровський МВК</string>
     <string name="in_progress">in progress</string>
-    <string name="state_placeholder">В роботі</string>
+    <string name="delayed">delayed</string>
+    <string name="completed">completed</string>
+    <string name="unknown">unknown</string>
+
+    <string name="placeholder_state">in progress</string>
 
     <array name="picture_urls">
         <item>

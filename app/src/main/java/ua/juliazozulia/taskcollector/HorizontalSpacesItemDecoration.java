@@ -33,17 +33,17 @@ import android.view.View;
  */
 
 public class HorizontalSpacesItemDecoration extends RecyclerView.ItemDecoration {
-    private int space;
+    private int mSpace;
 
     public HorizontalSpacesItemDecoration(int space) {
-        this.space = space;
+        this.mSpace = space;
     }
 
     @Override
     public void getItemOffsets(Rect outRect, View view, RecyclerView parent, RecyclerView.State state) {
-        outRect.right = space;
-        outRect.bottom = space;
-        outRect.top = space;
+        outRect.right = mSpace;
+        outRect.bottom = mSpace;
+        outRect.top = mSpace;
         // skip adding left margin to avoid double space between items
     }
 }

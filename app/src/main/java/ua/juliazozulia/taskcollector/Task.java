@@ -25,7 +25,10 @@
 package ua.juliazozulia.taskcollector;
 
 import android.content.Context;
+import android.support.annotation.StringDef;
 
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
 import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Date;
@@ -37,71 +40,108 @@ import java.util.List;
 
 public class Task {
 
-    private String title;
-    private Date createdDate;
-    private Date registeredDate;
-    private Date dueDate;
-    private String responsible;
-    private List<String> pictures;
-    private String description;
+    public static final String IN_PROGRESS = "in progress";
+    public static final String DELAYED = "delayed";
+    public static final String COMPLETED = "completed";
 
-    //TODO replace with enum maybe
-    private String state;
+    //Thank you for hint about  @StringDef. I didn't know about it.
+    // Have I implemented it correctly?
 
-    public Task() {
-    }
+    //about google code style... I used to use auto generated methods for getters and setters (Alt+Insert). It's convenient for model class.
+    // I suggest that getters like getmPictures() is incorrect.
+    // So decision is not to use auto generated methods?
+
+    @TaskState
+    private String mState;
+    private String mTitle;
+    private Date mCreatedDate;
+    private Date mRegisteredDate;
+    private Date mDueDate;
+    private String mResponsible;
+    private List<String> mPictures;
+    private String mDescription;
+
 
     /**
      * setup demo data fot task. Takes values from R.string
      */
 
     public void setDemoData(Context context) {
-        title = context.getResources().getString(R.string.title);
+
+        mTitle = context.getResources().getString(R.string.title);
 
         Calendar calendar = Calendar.getInstance();
-        createdDate = calendar.getTime();
+        mCreatedDate = calendar.getTime();
 
         calendar.add(Calendar.DATE, 1);
-        registeredDate = calendar.getTime();
+        mRegisteredDate = calendar.getTime();
 
         calendar.add(Calendar.MONTH, 1);
-        dueDate = calendar.getTime();
+        mDueDate = calendar.getTime();
 
-        responsible = context.getResources().getString(R.string.responsible_placeholder);
-        pictures = Arrays.asList(context.getResources().getStringArray(R.array.picture_urls));
-        state = context.getResources().getString(R.string.in_progress);
-        description = context.getResources().getString(R.string.placeholder);
+        mResponsible = context.getResources().getString(R.string.responsible_placeholder);
+        mPictures = Arrays.asList(context.getResources().getStringArray(R.array.picture_urls));
+        mDescription = context.getResources().getString(R.string.placeholder);
+        @TaskState String s = context.getResources().getString(R.string.placeholder_state);
+        setState(s);
     }
 
     public String getTitle() {
-        return title;
+        return mTitle;
     }
 
     public Date getCreatedDate() {
-        return createdDate;
+        return mCreatedDate;
     }
 
     public Date getRegisteredDate() {
-        return registeredDate;
+        return mRegisteredDate;
     }
 
     public Date getDueDate() {
-        return dueDate;
+        return mDueDate;
     }
 
     public String getResponsible() {
-        return responsible;
+        return mResponsible;
     }
 
     public List<String> getPictures() {
-        return pictures;
+        return mPictures;
     }
 
     public String getDescription() {
-        return description;
+        return mDescription;
     }
 
+    public String getStateName(Context context) {
+        switch (mState) {
+            case IN_PROGRESS: {
+                return context.getResources().getString(R.string.in_progress);
+            }
+            case DELAYED: {
+                return context.getResources().getString(R.string.delayed);
+            }
+            case COMPLETED: {
+                return context.getResources().getString(R.string.completed);
+            }
+            default: {
+                return context.getResources().getString(R.string.unknown);
+            }
+        }
+    }
+
+    @TaskState
     public String getState() {
-        return state;
+        return mState;
+    }
+
+    public void setState(@TaskState String currentState) {
+        this.mState = currentState;
+    }
+
+    @StringDef({IN_PROGRESS, DELAYED, COMPLETED})
+    @Retention(RetentionPolicy.SOURCE)
+    public @interface TaskState {
     }
 }

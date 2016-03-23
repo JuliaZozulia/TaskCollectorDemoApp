@@ -7,6 +7,7 @@
     <string name="due_date">Вирішити до</string>
     <string name="responsible">Відповідальний</string>
     <string name="in_progress">В роботі</string>
+    <string name="placeholder_state">in progress</string>
 
 
 </resources>
