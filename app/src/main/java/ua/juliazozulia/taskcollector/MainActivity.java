@@ -36,6 +36,8 @@ import android.widget.Toast;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 
+//[Comment] Wrong toolbar and statusbar colors
+//[Comment] Back button is missing
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private TextView mCreateDate;

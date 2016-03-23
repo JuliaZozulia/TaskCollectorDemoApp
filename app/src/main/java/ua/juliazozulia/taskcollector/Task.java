@@ -37,7 +37,7 @@ import java.util.List;
 
 public class Task {
 
-    private String title;
+    private String title; //[Comment] Please use google code style
     private Date createdDate;
     private Date registeredDate;
     private Date dueDate;
@@ -46,7 +46,7 @@ public class Task {
     private String description;
 
     //TODO replace with enum maybe
-    private String state;
+    private String state; //[Comment] Bad idea to use enums. I suggest to read about @IntDef or @StringDef
 
     public Task() {
     }

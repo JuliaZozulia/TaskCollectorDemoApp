@@ -33,7 +33,7 @@ import android.view.View;
  */
 
 public class HorizontalSpacesItemDecoration extends RecyclerView.ItemDecoration {
-    private int space;
+    private int space; //[Comment] Use google code style. mSpace
 
     public HorizontalSpacesItemDecoration(int space) {
         this.space = space;

@@ -35,10 +35,10 @@ import java.util.List;
 
 
 public class PictureAdapter extends RecyclerView.Adapter<PictureAdapter.ViewHolder> {
-    private List<String> mDataset; //I prefer List to Array as in real application user may add pictures
+    private List<String> mDataset; //I prefer List to Array as in real application user may add pictures [Comment] Yes, it's true
 
     public PictureAdapter(List<String> dataset) {
-        this.mDataset = dataset;
+        this.mDataset = dataset; //[Comment] Without this
     }
 
     @Override
