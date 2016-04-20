@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Збірник завдань</string>
-    <string name="title">Комунальне господарство</string>
     <string name="created">Створено</string>
     <string name="registered">Зареєстровано</string>
     <string name="due_date">Вирішити до</string>
     <string name="responsible">Відповідальний</string>
     <string name="in_progress">В роботі</string>
-    <string name="placeholder_state">in progress</string>
 
 
 </resources>

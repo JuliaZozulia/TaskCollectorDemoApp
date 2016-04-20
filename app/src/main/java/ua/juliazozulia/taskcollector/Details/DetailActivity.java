@@ -22,7 +22,7 @@
  * SOFTWARE.
  */
 
-package ua.juliazozulia.taskcollector;
+package ua.juliazozulia.taskcollector.Details;
 
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
@@ -38,12 +38,16 @@ import android.widget.Toast;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+import ua.juliazozulia.taskcollector.R;
+import ua.juliazozulia.taskcollector.Task;
+
+public class DetailActivity extends AppCompatActivity implements View.OnClickListener {
 
     private TextView mCreateDate;
     private TextView mRegisteredDate;
     private TextView mDueToDate;
     private TextView mResponsible;
+    private TextView mCategory;
     private TextView mState;
     private TextView mDescription;
     private RecyclerView mRecyclerView;
@@ -52,9 +56,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         initActionbar();
-        setContentView(R.layout.activity_main);
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_detail);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         mTask = new Task();
@@ -70,6 +73,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mRegisteredDate = (TextView) findViewById(R.id.register_date);
         mDueToDate = (TextView) findViewById(R.id.due_date);
         mResponsible = (TextView) findViewById(R.id.responsible);
+        mCategory = (TextView) findViewById(R.id.category);
         mState = (TextView) findViewById(R.id.state);
         mDescription = (TextView) findViewById(R.id.description);
     }
@@ -87,6 +91,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mResponsible.setText(mTask.getResponsible());
         mDescription.setText(mTask.getDescription());
         mState.setText(mTask.getStateName(this));
+        mCategory.setText(mTask.getCategoryName(this));
     }
 
     private void initActionbar() {

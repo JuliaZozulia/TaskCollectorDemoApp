@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package ua.juliazozulia.taskcollector;
+package ua.juliazozulia.taskcollector.Details;
 
 import android.net.Uri;
 import android.support.v7.widget.RecyclerView;
@@ -32,6 +32,8 @@ import android.view.ViewGroup;
 import com.facebook.drawee.view.SimpleDraweeView;
 
 import java.util.List;
+
+import ua.juliazozulia.taskcollector.R;
 
 
 public class PictureAdapter extends RecyclerView.Adapter<PictureAdapter.ViewHolder> {

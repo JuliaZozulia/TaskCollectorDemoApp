@@ -22,7 +22,7 @@
  * SOFTWARE.
  */
 
-package ua.juliazozulia.taskcollector;
+package ua.juliazozulia.taskcollector.Details;
 
 import android.graphics.Rect;
 import android.support.v7.widget.RecyclerView;

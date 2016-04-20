@@ -25,10 +25,7 @@
 package ua.juliazozulia.taskcollector;
 
 import android.content.Context;
-import android.support.annotation.StringDef;
 
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
 import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Date;
@@ -40,18 +37,9 @@ import java.util.List;
 
 public class Task {
 
-    public static final String IN_PROGRESS = "in progress";
-    public static final String DELAYED = "delayed";
-    public static final String COMPLETED = "completed";
-
-    //Thank you for hint about  @StringDef. I didn't know about it.
-    // Have I implemented it correctly?
-
-    //about google code style... I used to use auto generated methods for getters and setters (Alt+Insert). It's convenient for model class.
-    // I suggest that getters like getmPictures() is incorrect.
-    // So decision is not to use auto generated methods?
-
-    @TaskState
+    @Category.TaskCategory
+    private String mCategory;
+    @States.TaskState
     private String mState;
     private String mTitle;
     private Date mCreatedDate;
@@ -60,7 +48,6 @@ public class Task {
     private String mResponsible;
     private List<String> mPictures;
     private String mDescription;
-
 
     /**
      * setup demo data fot task. Takes values from R.string
@@ -82,8 +69,10 @@ public class Task {
         mResponsible = context.getResources().getString(R.string.responsible_placeholder);
         mPictures = Arrays.asList(context.getResources().getStringArray(R.array.picture_urls));
         mDescription = context.getResources().getString(R.string.placeholder);
-        @TaskState String s = context.getResources().getString(R.string.placeholder_state);
+        @States.TaskState String s = context.getResources().getString(R.string.placeholder_state);
         setState(s);
+        @Category.TaskCategory String c = context.getResources().getString(R.string.placeholder_category);
+        setCategory(c);
     }
 
     public String getTitle() {
@@ -115,33 +104,18 @@ public class Task {
     }
 
     public String getStateName(Context context) {
-        switch (mState) {
-            case IN_PROGRESS: {
-                return context.getResources().getString(R.string.in_progress);
-            }
-            case DELAYED: {
-                return context.getResources().getString(R.string.delayed);
-            }
-            case COMPLETED: {
-                return context.getResources().getString(R.string.completed);
-            }
-            default: {
-                return context.getResources().getString(R.string.unknown);
-            }
-        }
+        return States.getStateName(context, mState);
     }
 
-    @TaskState
-    public String getState() {
-        return mState;
-    }
-
-    public void setState(@TaskState String currentState) {
+    public void setState(@States.TaskState String currentState) {
         this.mState = currentState;
     }
 
-    @StringDef({IN_PROGRESS, DELAYED, COMPLETED})
-    @Retention(RetentionPolicy.SOURCE)
-    public @interface TaskState {
+    public String getCategoryName(Context context) {
+        return Category.getCategoryName(context, mCategory);
+    }
+
+    public void setCategory(@Category.TaskCategory String category) {
+        mCategory = category;
     }
 }
