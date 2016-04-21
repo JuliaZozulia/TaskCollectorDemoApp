@@ -22,24 +22,41 @@
  * SOFTWARE.
  */
 
-package ua.juliazozulia.taskcollector;
+package ua.juliazozulia.taskcollector.UI.Details;
 
-import android.app.Application;
+import android.graphics.Rect;
+import android.support.v7.widget.RecyclerView;
+import android.view.View;
 
-import com.facebook.drawee.backends.pipeline.Fresco;
+import ua.juliazozulia.taskcollector.TaskApplication;
 
-public class TaskApplication extends Application {
+/**
+ * Adds spaces to RecycleView with horizontal orientation
+ */
 
-    private static TaskApplication mInstance = null;
+public class SpacesItemDecoration extends RecyclerView.ItemDecoration {
+    private int mSpace;
+    private boolean mIsVertical;
 
-    @Override
-    public void onCreate() {
-        super.onCreate();
-        Fresco.initialize(this);
-        mInstance = this;
+    public SpacesItemDecoration(int space, boolean isVertical) {
+        mSpace =  space;
+        mIsVertical = isVertical;
     }
 
-    public static TaskApplication getInstance(){
-        return mInstance;
+    @Override
+    public void getItemOffsets(Rect outRect, View view, RecyclerView parent, RecyclerView.State state) {
+        outRect.right = mSpace;
+        outRect.bottom = mSpace;
+        if (!mIsVertical) {
+            outRect.top = mSpace;
+        } else {
+            // skip adding left margin to avoid double space between items
+            //on horizontal orientation
+            outRect.left = mSpace;
+            // Add top margin only for the first item to avoid double space between items
+            if (parent.getChildPosition(view) == 0) {
+                outRect.top = mSpace;
+            }
+        }
     }
 }

@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">TaskCollector</string>
-    <string name="title">CE-1254662</string>
     <string name="created">Created</string>
     <string name="registered">Registered</string>
     <string name="due_date">Due date</string>
@@ -10,7 +9,7 @@
     <string name="responsible_placeholder">Дніпропетровський МВК</string>
 
     <string name="in_progress">in progress</string>
-    <string name="delayed">delayed</string>
+    <string name="waiting">waiting</string>
     <string name="completed">completed</string>
     <string name="unknown">unknown</string>
 
@@ -19,20 +18,11 @@
     <string name="health_service">Health service</string>
     <string name="proposals">Proposals</string>
 
-    <string name="placeholder_state">in progress</string>
-    <string name="placeholder_category">municipal</string>
+    <string name="days" formatted="false">%s days</string>
 
-    <array name="picture_urls">
-        <item>
-            http://hdwallpaperbook.com/wp-content/gallery/flower-wallpapers/Orange+Flowers+wallpapers.jpg
-        </item>
-        <item>http://www.mrwallpaper.com/wallpapers/crocus-flower-1024x768.jpg</item>
-        <item>http://eskipaper.com/images/beautiful-pink-flowers-2.jpg</item>
-        <item>
-            http://newflowerwallpaper.com/download/free-download-flowers-images/free-download-flowers-images-23.jpg
-        </item>
-        <item>http://media1.santabanta.com/full1/Nature/Flowers/flowers-166a.jpg</item>
-        <item>http://wallpapers.leovacity.be/images/Beautiful_flowers_wallpaper.jpg</item>
-        <item>http://designurge.com/wp-content/uploads/2013/10/Chrysanthemum-0096.jpg</item>
-    </array>
+    <string name="e_contact">e-contact</string>
+    <string name="all_issues">All issues</string>
+    <string name="issues_on_map">Issues on the map</string>
+    <string name="filter">filter</string>
+    <string name="login">Login to account</string>
 </resources>

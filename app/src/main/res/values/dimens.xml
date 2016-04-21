@@ -6,4 +6,5 @@
     <dimen name="double_grid_step_padding">16dp</dimen>
     <dimen name="row_height">48dp</dimen>
     <dimen name="main_activity_recycler_h">200dp</dimen>
+    <dimen name="fab_scroll_threshold">4dp</dimen>
 </resources>

@@ -5,7 +5,23 @@
     <string name="registered">Зареєстровано</string>
     <string name="due_date">Вирішити до</string>
     <string name="responsible">Відповідальний</string>
+
     <string name="in_progress">В роботі</string>
+    <string name="waiting">Очікує</string>
+    <string name="completed">Виконано</string>
+    <string name="unknown">unknown</string>
+
+    <string name="municipal">Комунальне господарство</string>
+    <string name="ecology">Екологія</string>
+    <string name="health_service">Охорона здоровя</string>
+    <string name="proposals">Пропозиції</string>
+
+    <string name="days" formatted="false">%s днів</string>
+
+    <string name="all_issues">Всі звернення</string>
+    <string name="issues_on_map">Звернення на мапі</string>
+    <string name="filter">фільтр</string>
+    <string name="login">Увійти в аккаунт</string>
 
 
 </resources>

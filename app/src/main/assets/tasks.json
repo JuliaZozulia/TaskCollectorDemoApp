@@ -1,0 +1,270 @@
+[
+  {
+    "mAddress": "ж/м Тополь, 5",
+    "mCategory": "municipal",
+    "mCreatedDate": "Apr 21, 2016 8:39:02 PM",
+    "mDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean iaculis erat id sapien varius laoreet. In hac habitasse platea dictumst. Pellentesque nec porta nunc, nec facilisis lacus. Vivamus accumsan felis ante, quis faucibus elit efficitur eget.",
+    "mDueDate": "May 25, 2016 8:39:02 PM",
+    "mPictures": [
+      "http://hdwallpaperbook.com/wp-content/gallery/flower-wallpapers/Orange+Flowers+wallpapers.jpg",
+      "http://www.mrwallpaper.com/wallpapers/crocus-flower-1024x768.jpg",
+      "http://eskipaper.com/images/beautiful-pink-flowers-2.jpg",
+      "http://newflowerwallpaper.com/download/free-download-flowers-images/free-download-flowers-images-23.jpg",
+      "http://media1.santabanta.com/full1/Nature/Flowers/flowers-166a.jpg",
+      "http://wallpapers.leovacity.be/images/Beautiful_flowers_wallpaper.jpg",
+      "http://designurge.com/wp-content/uploads/2013/10/Chrysanthemum-0096.jpg"
+    ],
+    "mPlusCount": 12,
+    "mRegisteredDate": "Apr 22, 2016 8:39:02 PM",
+    "mResponsible": "Дніпропетровський МВК",
+    "mState": "in progress",
+    "mTitle": "CE-1254662"
+  },
+  {
+    "mAddress": "Гагаріна, 9 ",
+    "mCategory": "ecology",
+    "mCreatedDate": "Apr 10, 2016 8:39:02 PM",
+    "mDescription": "Cras eget blandit tortor, vel lacinia nibh. Aliquam erat volutpat. Maecenas tempus lacus vitae magna feugiat, maximus rutrum eros tristique. Nam suscipit, orci a gravida eleifend, urna orci accumsan quam, a ullamcorper urna dui ut nisl. Vivamus libero arcu, suscipit eu felis at, feugiat pulvinar massa.",
+    "mDueDate": "May 30, 2016 8:39:02 PM",
+    "mPictures": [
+      "http://www.fresher.ru/manager_content/images/udivitelnye-derevya-nashej-planety/big/1.jpg",
+      "http://turboportal.ru/uploads/posts/2013-06/1371038327_trees.jpg",
+      "http://www.fresher.ru/manager_content/images/udivitelnye-derevya-nashej-planety/6.jpg",
+      "http://cdn1.fullpicture.ru/wp-content/uploads/2014/07/Samye-krasivye-derevya-v-mire-13.jpg",
+      "http://daler.ru/pictures/1/2560x1600/Razmashistoe-derevo-11904.jpg"
+    ],
+    "mPlusCount": 1,
+    "mRegisteredDate": "Apr 22, 2016 8:39:02 PM",
+    "mResponsible": "Екологічний контроль",
+    "mState": "in progress",
+    "mTitle": "КЕ-1254662"
+  },
+  {
+    "mAddress": "Центральна, 68",
+    "mCategory": "health_service",
+    "mCreatedDate": "Apr 02, 2016 8:39:02 PM",
+    "mDescription": "Ut at efficitur enim, at eleifend urna. Aliquam rutrum accumsan urna, sit amet mattis neque varius nec. Donec bibendum viverra enim. Pellentesque sed dignissim neque, vel mollis purus. Maecenas porta sit amet ligula vel consequat. Phasellus facilisis tortor elit, sit amet efficitur neque pulvinar eu.",
+    "mDueDate": "May 22, 2016 8:39:02 PM",
+    "mPictures": [
+      "http://newflowerwallpaper.com/download/free-download-flowers-images/free-download-flowers-images-23.jpg",
+      "http://media1.santabanta.com/full1/Nature/Flowers/flowers-166a.jpg",
+      "http://wallpapers.leovacity.be/images/Beautiful_flowers_wallpaper.jpg",
+      "http://designurge.com/wp-content/uploads/2013/10/Chrysanthemum-0096.jpg"
+    ],
+    "mPlusCount": 1,
+    "mRegisteredDate": "Apr 22, 2016 8:39:02 PM",
+    "mResponsible": "Лікарня 5",
+    "mState": "in progress",
+    "mTitle": "ЗД-1254662"
+  },
+  {
+    "mAddress": "Площа Героїв Майдану",
+    "mCategory": "proposals",
+    "mCreatedDate": "Apr 06, 2016 8:39:02 PM",
+    "mDescription": "Sed vehicula urna eget nisl pellentesque, id congue quam feugiat. Quisque in sem volutpat augue sollicitudin dapibus. Maecenas dignissim interdum quam. Donec elementum aliquet sodales. Proin ac ex nec nisl porttitor sollicitudin vitae non elit. Mauris suscipit, est sit amet euismod posuere, purus tortor lacinia lacus, eu faucibus odio lorem vel lectus. Sed facilisis velit vitae auctor tempor.",
+    "mDueDate": "May 30, 2016 8:39:02 PM",
+    "mPictures": [
+      "http://eskipaper.com/images/beautiful-pink-flowers-2.jpg",
+      "http://newflowerwallpaper.com/download/free-download-flowers-images/free-download-flowers-images-23.jpg",
+      "http://media1.santabanta.com/full1/Nature/Flowers/flowers-166a.jpg",
+      "http://wallpapers.leovacity.be/images/Beautiful_flowers_wallpaper.jpg",
+      "http://designurge.com/wp-content/uploads/2013/10/Chrysanthemum-0096.jpg"
+    ],
+    "mPlusCount": 2,
+    "mRegisteredDate": "Apr 22, 2016 8:39:02 PM",
+    "mResponsible": "громада",
+    "mState": "waiting",
+    "mTitle": "CE-1254662"
+  },
+  {
+    "mAddress": "Площа Героїв Майдану",
+    "mCategory": "proposals",
+    "mCreatedDate": "Apr 06, 2016 8:39:02 PM",
+    "mDescription": "Sed vehicula urna eget nisl pellentesque, id congue quam feugiat. Quisque in sem volutpat augue sollicitudin dapibus. Maecenas dignissim interdum quam. Donec elementum aliquet sodales. Proin ac ex nec nisl porttitor sollicitudin vitae non elit. Mauris suscipit, est sit amet euismod posuere, purus tortor lacinia lacus, eu faucibus odio lorem vel lectus. Sed facilisis velit vitae auctor tempor.",
+    "mDueDate": "May 30, 2016 8:39:02 PM",
+    "mPictures": [
+      "http://eskipaper.com/images/beautiful-pink-flowers-2.jpg",
+      "http://newflowerwallpaper.com/download/free-download-flowers-images/free-download-flowers-images-23.jpg",
+      "http://media1.santabanta.com/full1/Nature/Flowers/flowers-166a.jpg",
+      "http://wallpapers.leovacity.be/images/Beautiful_flowers_wallpaper.jpg",
+      "http://designurge.com/wp-content/uploads/2013/10/Chrysanthemum-0096.jpg"
+    ],
+    "mPlusCount": 2,
+    "mRegisteredDate": "Apr 22, 2016 8:39:02 PM",
+    "mResponsible": "громада",
+    "mState": "in progress",
+    "mTitle": "CE-1254662"
+  },
+  {
+    "mAddress": "вул. Олеся Гончара, 7",
+    "mCategory": "municipal",
+    "mCreatedDate": "Apr 21, 2016 8:39:02 PM",
+    "mDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean iaculis erat id sapien varius laoreet. In hac habitasse platea dictumst. Pellentesque nec porta nunc, nec facilisis lacus. Vivamus accumsan felis ante, quis faucibus elit efficitur eget.",
+    "mDueDate": "May 25, 2016 8:39:02 PM",
+    "mPictures": [
+      "http://hdwallpaperbook.com/wp-content/gallery/flower-wallpapers/Orange+Flowers+wallpapers.jpg",
+      "http://www.mrwallpaper.com/wallpapers/crocus-flower-1024x768.jpg",
+      "http://eskipaper.com/images/beautiful-pink-flowers-2.jpg",
+      "http://newflowerwallpaper.com/download/free-download-flowers-images/free-download-flowers-images-23.jpg",
+      "http://media1.santabanta.com/full1/Nature/Flowers/flowers-166a.jpg",
+      "http://wallpapers.leovacity.be/images/Beautiful_flowers_wallpaper.jpg",
+      "http://designurge.com/wp-content/uploads/2013/10/Chrysanthemum-0096.jpg"
+    ],
+    "mPlusCount": 9,
+    "mRegisteredDate": "Apr 22, 2016 8:39:02 PM",
+    "mResponsible": "ДНУ ім. О. Гончара",
+    "mState": "waiting",
+    "mTitle": "ОС-1254662"
+  },
+  {
+    "mAddress": "Перемога, 9 ",
+    "mCategory": "ecology",
+    "mCreatedDate": "Apr 10, 2016 8:39:02 PM",
+    "mDescription": "Cras eget blandit tortor, vel lacinia nibh. Aliquam erat volutpat. Maecenas tempus lacus vitae magna feugiat, maximus rutrum eros tristique. Nam suscipit, orci a gravida eleifend, urna orci accumsan quam, a ullamcorper urna dui ut nisl. Vivamus libero arcu, suscipit eu felis at, feugiat pulvinar massa.",
+    "mDueDate": "May 30, 2016 8:39:02 PM",
+    "mPictures": [
+      "http://www.fresher.ru/manager_content/images/udivitelnye-derevya-nashej-planety/big/1.jpg",
+      "http://turboportal.ru/uploads/posts/2013-06/1371038327_trees.jpg",
+      "http://www.fresher.ru/manager_content/images/udivitelnye-derevya-nashej-planety/6.jpg",
+      "http://cdn1.fullpicture.ru/wp-content/uploads/2014/07/Samye-krasivye-derevya-v-mire-13.jpg",
+      "http://daler.ru/pictures/1/2560x1600/Razmashistoe-derevo-11904.jpg"
+    ],
+    "mPlusCount": 1,
+    "mRegisteredDate": "Apr 22, 2016 8:39:02 PM",
+    "mResponsible": "ЖЕК №7",
+    "mState": "completed",
+    "mTitle": "CE-1254662"
+  },
+  {
+    "mAddress": "Европейська площа",
+    "mCategory": "health_service",
+    "mCreatedDate": "Apr 02, 2016 8:39:02 PM",
+    "mDescription": "Ut at efficitur enim, at eleifend urna. Aliquam rutrum accumsan urna, sit amet mattis neque varius nec. Donec bibendum viverra enim. Pellentesque sed dignissim neque, vel mollis purus. Maecenas porta sit amet ligula vel consequat. Phasellus facilisis tortor elit, sit amet efficitur neque pulvinar eu.",
+    "mDueDate": "May 22, 2016 8:39:02 PM",
+    "mPictures": [
+      "http://newflowerwallpaper.com/download/free-download-flowers-images/free-download-flowers-images-23.jpg",
+      "http://media1.santabanta.com/full1/Nature/Flowers/flowers-166a.jpg",
+      "http://wallpapers.leovacity.be/images/Beautiful_flowers_wallpaper.jpg",
+      "http://designurge.com/wp-content/uploads/2013/10/Chrysanthemum-0096.jpg"
+    ],
+    "mPlusCount": 4,
+    "mRegisteredDate": "Apr 22, 2016 8:39:02 PM",
+    "mResponsible": "громада",
+    "mState": "completed",
+    "mTitle": "ГР-1254662"
+  },
+  {
+    "mAddress": "вулиця Каштанова",
+    "mCategory": "proposals",
+    "mCreatedDate": "Apr 06, 2016 8:39:02 PM",
+    "mDescription": "Sed vehicula urna eget nisl pellentesque, id congue quam feugiat. Quisque in sem volutpat augue sollicitudin dapibus. Maecenas dignissim interdum quam. Donec elementum aliquet sodales. Proin ac ex nec nisl porttitor sollicitudin vitae non elit. Mauris suscipit, est sit amet euismod posuere, purus tortor lacinia lacus, eu faucibus odio lorem vel lectus. Sed facilisis velit vitae auctor tempor. ",
+    "mDueDate": "May 30, 2016 8:39:02 PM",
+    "mPictures": [
+      "http://eskipaper.com/images/beautiful-pink-flowers-2.jpg",
+      "http://newflowerwallpaper.com/download/free-download-flowers-images/free-download-flowers-images-23.jpg",
+      "http://media1.santabanta.com/full1/Nature/Flowers/flowers-166a.jpg",
+      "http://wallpapers.leovacity.be/images/Beautiful_flowers_wallpaper.jpg",
+      "http://designurge.com/wp-content/uploads/2013/10/Chrysanthemum-0096.jpg"
+    ],
+    "mPlusCount": 2,
+    "mRegisteredDate": "Apr 22, 2016 8:39:02 PM",
+    "mResponsible": "ЖЕК №1",
+    "mState": "completed",
+    "mTitle": "CE-1254662"
+  },
+  {
+    "mAddress": "вулиця Березова, 7",
+    "mCategory": "ecology",
+    "mCreatedDate": "Apr 06, 2016 8:39:02 PM",
+    "mDescription": "Sed vehicula urna eget nisl pellentesque, id congue quam feugiat. Quisque in sem volutpat augue sollicitudin dapibus. Maecenas dignissim interdum quam. Donec elementum aliquet sodales. Proin ac ex nec nisl porttitor sollicitudin vitae non elit. Mauris suscipit, est sit amet euismod posuere, purus tortor lacinia lacus, eu faucibus odio lorem vel lectus. Sed facilisis velit vitae auctor tempor. ",
+    "mDueDate": "May 30, 2016 8:39:02 PM",
+    "mPictures": [
+      "http://eskipaper.com/images/beautiful-pink-flowers-2.jpg",
+      "http://newflowerwallpaper.com/download/free-download-flowers-images/free-download-flowers-images-23.jpg",
+      "http://media1.santabanta.com/full1/Nature/Flowers/flowers-166a.jpg",
+      "http://wallpapers.leovacity.be/images/Beautiful_flowers_wallpaper.jpg",
+      "http://designurge.com/wp-content/uploads/2013/10/Chrysanthemum-0096.jpg"
+    ],
+    "mPlusCount": 2,
+    "mRegisteredDate": "Apr 22, 2016 8:39:02 PM",
+    "mResponsible": "ЖЕК №1",
+    "mState": "completed",
+    "mTitle": "CE-1254662"
+  },
+  {
+    "mAddress": "Тонельна балка",
+    "mCategory": "proposals",
+    "mCreatedDate": "Apr 06, 2016 8:39:02 PM",
+    "mDescription": "Sed vehicula urna eget nisl pellentesque, id congue quam feugiat. Quisque in sem volutpat augue sollicitudin dapibus. Maecenas dignissim interdum quam. Donec elementum aliquet sodales. Proin ac ex nec nisl porttitor sollicitudin vitae non elit. Mauris suscipit, est sit amet euismod posuere, purus tortor lacinia lacus, eu faucibus odio lorem vel lectus. Sed facilisis velit vitae auctor tempor. ",
+    "mDueDate": "May 30, 2016 8:39:02 PM",
+    "mPictures": [
+      "http://eskipaper.com/images/beautiful-pink-flowers-2.jpg",
+      "http://newflowerwallpaper.com/download/free-download-flowers-images/free-download-flowers-images-23.jpg",
+      "http://media1.santabanta.com/full1/Nature/Flowers/flowers-166a.jpg",
+      "http://wallpapers.leovacity.be/images/Beautiful_flowers_wallpaper.jpg",
+      "http://designurge.com/wp-content/uploads/2013/10/Chrysanthemum-0096.jpg"
+    ],
+    "mPlusCount": 5,
+    "mRegisteredDate": "Apr 22, 2016 8:39:02 PM",
+    "mResponsible": "громада",
+    "mState": "completed",
+    "mTitle": "CE-1254662"
+  },
+  {
+    "mAddress": "вулиця Березова, 7",
+    "mCategory": "ecology",
+    "mCreatedDate": "Apr 06, 2016 8:39:02 PM",
+    "mDescription": "Sed vehicula urna eget nisl pellentesque, id congue quam feugiat. Quisque in sem volutpat augue sollicitudin dapibus. Maecenas dignissim interdum quam. Donec elementum aliquet sodales. Proin ac ex nec nisl porttitor sollicitudin vitae non elit. Mauris suscipit, est sit amet euismod posuere, purus tortor lacinia lacus, eu faucibus odio lorem vel lectus. Sed facilisis velit vitae auctor tempor. ",
+    "mDueDate": "May 25, 2016 8:39:02 PM",
+    "mPictures": [
+      "http://eskipaper.com/images/beautiful-pink-flowers-2.jpg",
+      "http://newflowerwallpaper.com/download/free-download-flowers-images/free-download-flowers-images-23.jpg",
+      "http://media1.santabanta.com/full1/Nature/Flowers/flowers-166a.jpg",
+      "http://wallpapers.leovacity.be/images/Beautiful_flowers_wallpaper.jpg",
+      "http://designurge.com/wp-content/uploads/2013/10/Chrysanthemum-0096.jpg"
+    ],
+    "mPlusCount": 2,
+    "mRegisteredDate": "Apr 22, 2016 8:39:02 PM",
+    "mResponsible": "ЖЕК №1",
+    "mState": "waiting",
+    "mTitle": "CE-1254662"
+  },
+  {
+    "mAddress": "вулиця Березова, 7",
+    "mCategory": "ecology",
+    "mCreatedDate": "Apr 09, 2016 8:39:02 PM",
+    "mDescription": "Sed vehicula urna eget nisl pellentesque, id congue quam feugiat. Quisque in sem volutpat augue sollicitudin dapibus. Maecenas dignissim interdum quam. Donec elementum aliquet sodales. Proin ac ex nec nisl porttitor sollicitudin vitae non elit. Mauris suscipit, est sit amet euismod posuere, purus tortor lacinia lacus, eu faucibus odio lorem vel lectus. Sed facilisis velit vitae auctor tempor. ",
+    "mDueDate": "May 5, 2016 8:39:02 PM",
+    "mPictures": [
+      "http://eskipaper.com/images/beautiful-pink-flowers-2.jpg",
+      "http://newflowerwallpaper.com/download/free-download-flowers-images/free-download-flowers-images-23.jpg",
+      "http://media1.santabanta.com/full1/Nature/Flowers/flowers-166a.jpg",
+      "http://wallpapers.leovacity.be/images/Beautiful_flowers_wallpaper.jpg",
+      "http://designurge.com/wp-content/uploads/2013/10/Chrysanthemum-0096.jpg"
+    ],
+    "mPlusCount": 2,
+    "mRegisteredDate": "Apr 22, 2016 8:39:02 PM",
+    "mResponsible": "ЖЕК №1",
+    "mState": "waiting",
+    "mTitle": "CE-1254662"
+  },
+  {
+    "mAddress": "вулиця 8 березня, 7",
+    "mCategory": "proposals",
+    "mCreatedDate": "Apr 06, 2016 8:39:02 PM",
+    "mDescription": " Sed fermentum metus leo, sit amet aliquam leo blandit non. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam sit amet mauris volutpat, lobortis justo eu, bibendum sem. Nullam consectetur, massa ac posuere pulvinar, nisi eros sagittis mauris, mollis pretium ex purus in sem.",
+    "mDueDate": "May 30, 2016 8:39:02 PM",
+    "mPictures": [
+      "http://eskipaper.com/images/beautiful-pink-flowers-2.jpg",
+      "http://newflowerwallpaper.com/download/free-download-flowers-images/free-download-flowers-images-23.jpg",
+      "http://media1.santabanta.com/full1/Nature/Flowers/flowers-166a.jpg",
+      "http://wallpapers.leovacity.be/images/Beautiful_flowers_wallpaper.jpg",
+      "http://designurge.com/wp-content/uploads/2013/10/Chrysanthemum-0096.jpg"
+    ],
+    "mPlusCount": 8,
+    "mRegisteredDate": "Apr 22, 2016 8:39:02 PM",
+    "mResponsible": "Обл. адміністранія",
+    "mState": "completed",
+    "mTitle": "CE-1254662"
+  }
+]
