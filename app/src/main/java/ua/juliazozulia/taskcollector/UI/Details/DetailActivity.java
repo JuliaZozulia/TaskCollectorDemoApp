@@ -38,6 +38,7 @@ import android.widget.Toast;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 
+import ua.juliazozulia.taskcollector.Model.States;
 import ua.juliazozulia.taskcollector.Model.Task;
 import ua.juliazozulia.taskcollector.Model.TasksList;
 import ua.juliazozulia.taskcollector.R;
@@ -93,6 +94,16 @@ public class DetailActivity extends AppCompatActivity implements View.OnClickLis
         mDescription.setText(mTask.getDescription());
         mState.setText(mTask.getStateName(this));
         mCategory.setText(mTask.getCategoryName(this));
+
+        if (mTask.getState().equals(States.IN_PROGRESS)) {
+            mState.setBackground(getResources().getDrawable(R.drawable.status_label_orange));
+        }
+        if (mTask.getState().equals(States.COMPLETED)) {
+            mState.setBackground(getResources().getDrawable(R.drawable.status_label_green));
+        }
+        if (mTask.getState().equals(States.WAITING)) {
+            mState.setBackground(getResources().getDrawable(R.drawable.status_label_gray));
+        }
     }
 
     private void initActionbar() {

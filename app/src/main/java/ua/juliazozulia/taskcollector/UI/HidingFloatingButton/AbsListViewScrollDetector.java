@@ -22,7 +22,7 @@
  * SOFTWARE.
  */
 
-package ua.juliazozulia.taskcollector.UI.AnimatedFloatingButton;
+package ua.juliazozulia.taskcollector.UI.HidingFloatingButton;
 
 import android.support.annotation.NonNull;
 import android.view.View;

@@ -4,6 +4,7 @@
     <color name="colorPrimaryDark">#446389</color>
     <color name="colorAccent">#fdfdfd</color>
     <color name="colorOrange">#f89900</color>
+    <color name="colorGreen">#f89900</color>
     <color name="colorPrimaryText">#000000</color>
     <color name="colorSecondaryText">#727272</color>
     <color name="colorBackground">#ebebeb</color>
@@ -12,8 +13,8 @@
     <color name="faded_blue">#6786b9</color>
     <color name="dull_blue">#4a76a4</color>
     <color name="off_blue_two">#557cac</color>
-    <color name="gray">#B0BEC5</color>
-    <color name="colorSubSecondaryText">#727272</color>
+    <color name="gray">#53000000</color>
+    <color name="colorSubSecondaryText">#8d000000</color>
     <color name="colorWhite70">#b3FFFFFF</color>
     <color name="colorWhite">#ffffff</color>
 

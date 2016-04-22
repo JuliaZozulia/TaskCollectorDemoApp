@@ -19,6 +19,7 @@
             android:layout_weight="1">
 
             <ImageView
+                android:tint="@color/gray"
                 android:id="@id/picture"
                 android:layout_width="@dimen/row_task_item_cat_image_h"
                 android:layout_height="@dimen/row_task_item_cat_image_h"
@@ -35,9 +36,10 @@
                 android:orientation="horizontal">
 
                 <ImageView
+                    android:tint="@color/gray"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:src="@drawable/ic_thumb_up_grey600_18dp" />
+                    android:src="@drawable/ic_thumb_up_white_18dp" />
 
                 <TextView
                     android:id="@+id/plus"

@@ -37,7 +37,7 @@ import ua.juliazozulia.taskcollector.Model.Category;
 import ua.juliazozulia.taskcollector.Model.States;
 import ua.juliazozulia.taskcollector.Model.TasksList;
 import ua.juliazozulia.taskcollector.R;
-import ua.juliazozulia.taskcollector.UI.AnimatedFloatingButton.HidingFloatingActionButton;
+import ua.juliazozulia.taskcollector.UI.HidingFloatingButton.HidingFloatingActionButton;
 import ua.juliazozulia.taskcollector.UI.Details.DetailActivity;
 
 public class ListTaskFragment extends Fragment {

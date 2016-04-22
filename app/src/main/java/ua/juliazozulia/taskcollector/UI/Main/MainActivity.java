@@ -31,8 +31,12 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.method.LinkMovementMethod;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.mikepenz.materialdrawer.Drawer;
@@ -61,6 +65,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setupViews() {
+
+        View footer = getLayoutInflater().inflate(R.layout.drawer_footer, null);
+        TextView textView = (TextView) footer.findViewById(R.id.footer);
+        RelativeLayout footerLayout = (RelativeLayout) footer.findViewById(R.id.footer_layout);
+        textView.setMovementMethod(LinkMovementMethod.getInstance());
+
         setupTab();
         setupToolbar();
         mDrawerResult = new DrawerBuilder()
@@ -73,6 +83,8 @@ public class MainActivity extends AppCompatActivity {
                         new DividerDrawerItem(),
                         new PrimaryDrawerItem().withName(R.string.login)
                 )
+                .withStickyFooterShadow(false)
+                .withStickyFooter(footerLayout)
                 .build();
     }
 

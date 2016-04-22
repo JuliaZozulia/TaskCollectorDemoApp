@@ -22,7 +22,7 @@
  * SOFTWARE.
  */
 
-package ua.juliazozulia.taskcollector.UI.AnimatedFloatingButton;
+package ua.juliazozulia.taskcollector.UI.HidingFloatingButton;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -58,7 +58,6 @@ public class HidingFloatingActionButton extends FloatingActionButton {
     public void attachToListView(@NonNull AbsListView listView) {
 
         AbsListViewScrollDetectorImpl scrollDetector = new AbsListViewScrollDetectorImpl();
-
         scrollDetector.setListView(listView);
         listView.setOnScrollListener(scrollDetector);
     }

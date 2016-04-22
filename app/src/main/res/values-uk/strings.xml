@@ -23,5 +23,7 @@
     <string name="filter">фільтр</string>
     <string name="login">Увійти в аккаунт</string>
 
+    <string name="footer">Зроблено з любов\'ю\n<a href="http://www.itruh.dp.ua/">IT Ruh Dnipro</a> та <a href="https://yalantis.com/">Yalantis</a></string>
+
 
 </resources>

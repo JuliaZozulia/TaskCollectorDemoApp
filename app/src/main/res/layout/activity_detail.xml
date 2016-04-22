@@ -35,7 +35,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/base_padding"
-                android:background="@drawable/status_label"
+                android:background="@drawable/status_label_orange"
                 android:paddingBottom="@dimen/base_padding"
                 android:paddingLeft="@dimen/double_grid_step_padding"
                 android:paddingRight="@dimen/double_grid_step_padding"
