@@ -95,14 +95,19 @@ public class DetailActivity extends AppCompatActivity implements View.OnClickLis
         mState.setText(mTask.getStateName(this));
         mCategory.setText(mTask.getCategoryName(this));
 
-        if (mTask.getState().equals(States.IN_PROGRESS)) {
-            mState.setBackground(getResources().getDrawable(R.drawable.status_label_orange));
-        }
-        if (mTask.getState().equals(States.COMPLETED)) {
-            mState.setBackground(getResources().getDrawable(R.drawable.status_label_green));
-        }
-        if (mTask.getState().equals(States.WAITING)) {
-            mState.setBackground(getResources().getDrawable(R.drawable.status_label_gray));
+        switch (mTask.getState()) {
+            case States.IN_PROGRESS: {
+                mState.setBackground(getResources().getDrawable(R.drawable.status_label_orange));
+                break;
+            }
+            case States.COMPLETED: {
+                mState.setBackground(getResources().getDrawable(R.drawable.status_label_green));
+                break;
+            }
+            case States.WAITING: {
+                mState.setBackground(getResources().getDrawable(R.drawable.status_label_gray));
+                break;
+            }
         }
     }
 
