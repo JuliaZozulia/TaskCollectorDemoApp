@@ -7,4 +7,21 @@
     <dimen name="row_height">48dp</dimen>
     <dimen name="main_activity_recycler_h">200dp</dimen>
     <dimen name="fab_scroll_threshold">4dp</dimen>
+    <dimen name="toolbar_height">48dp</dimen>
+
+    <dimen name="drawer_header_text_size">24sp</dimen>
+    <dimen name="drawer_header_margin_top">48dp</dimen>
+    <dimen name="drawer_margin_left">16dp</dimen>
+    <dimen name="drawer_header_margin_bottom">24dp</dimen>
+    <dimen name="drawer_header_height">24dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="row_task_item_height">126dp</dimen>
+    <dimen name="row_task_corner_radius">8dp</dimen>
+    <dimen name="row_task_item_cat_image_h">30dp</dimen>
+    <dimen name="row_task_item_cat_image_margin">24dp</dimen>
+    <dimen name="row_task_item_text_size">18sp</dimen>
+    <dimen name="row_task_item_title_h">36dp</dimen>
+    <dimen name="row_task_item_title_text_size">16sp</dimen>
+
 </resources>

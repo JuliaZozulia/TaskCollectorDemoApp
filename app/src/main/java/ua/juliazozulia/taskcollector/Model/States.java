@@ -8,9 +8,6 @@ import java.lang.annotation.RetentionPolicy;
 
 import ua.juliazozulia.taskcollector.R;
 
-/**
- * Created by Julia on 18.04.2016.
- */
 public class States {
     public static final String IN_PROGRESS = "in progress";
     public static final String WAITING = "waiting";

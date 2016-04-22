@@ -25,4 +25,6 @@
     <string name="issues_on_map">Issues on the map</string>
     <string name="filter">filter</string>
     <string name="login">Login to account</string>
+    <string name="address_placeholder">ж/м Тополя-2</string>
+    <string name="days_placeholder">-14 днів</string>
 </resources>

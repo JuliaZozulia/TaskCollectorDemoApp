@@ -1,6 +1,29 @@
+/*
+ * The MIT License (MIT)
+ *
+ * Copyright (c) 2016 Julia
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ */
+
 package ua.juliazozulia.taskcollector.UI.Main;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
@@ -15,7 +38,6 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 
 import ua.juliazozulia.taskcollector.Model.Task;
 import ua.juliazozulia.taskcollector.Model.TasksList;
@@ -25,9 +47,6 @@ import ua.juliazozulia.taskcollector.UI.Details.DetailActivity;
 import ua.juliazozulia.taskcollector.Utils.DateUtils;
 import ua.juliazozulia.taskcollector.Utils.HelperDrawableUtils;
 
-/**
- * Created by Julia on 20.04.2016.
- */
 public class TaskRecycleViewAdapter extends RecyclerView.Adapter<TaskRecycleViewAdapter.ViewHolder> {
 
     private List<Task> mDataset;
@@ -68,19 +87,19 @@ public class TaskRecycleViewAdapter extends RecyclerView.Adapter<TaskRecycleView
 
     public static class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         private final Context context;
-        private Task mItem;
         TextView title;
         TextView address;
         TextView creteDate;
         TextView days;
         ImageView icon;
         TextView plusCount;
+        private Task mItem;
 
         public ViewHolder(View row) {
             super(row);
             context = row.getContext();
             title = (TextView) row.findViewById(R.id.title);
-            address = (TextView) row.findViewById(R.id.adress);
+            address = (TextView) row.findViewById(R.id.address);
             creteDate = (TextView) row.findViewById(R.id.create_date);
             days = (TextView) row.findViewById(R.id.days);
             icon = (ImageView) row.findViewById(R.id.picture);

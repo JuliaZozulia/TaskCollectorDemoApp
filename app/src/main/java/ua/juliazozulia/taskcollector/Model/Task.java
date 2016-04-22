@@ -26,13 +26,8 @@ package ua.juliazozulia.taskcollector.Model;
 
 import android.content.Context;
 
-import java.util.Arrays;
-import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
-import java.util.Random;
-
-import ua.juliazozulia.taskcollector.R;
 
 /**
  * Model class for task instance
@@ -90,19 +85,21 @@ public class Task {
         return States.getStateName(context, mState);
     }
 
-
     public String getCategoryName(Context context) {
         return Category.getCategoryName(context, mCategory);
     }
 
-    public @Category.TaskCategory String getCategory() {
+    public
+    @Category.TaskCategory
+    String getCategory() {
         return mCategory;
     }
 
-    public @States.TaskState String getState() {
+    public
+    @States.TaskState
+    String getState() {
         return mState;
     }
-
 
     public Integer getPlusCount() {
         return mPlusCount;

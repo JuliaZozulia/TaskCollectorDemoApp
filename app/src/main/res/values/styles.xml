@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:android="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
@@ -7,6 +7,7 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+
     <style name="AppTheme.NoActionBar" parent="AppTheme">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
@@ -40,21 +41,9 @@
         <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body1</item>
     </style>
 
-   <!-- <style name="TextAppearance.Tabs" parent="TextAppearance.Design.Tab">
-        <item name="android:textSize">14sp</item>
-        <item name="android:textColor">@android:color/white</item>
-    </style>-->
-
-    <!--<style name="TextAppearance.Tabs.Selected">
+    <style name="TaskBottomText">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body1</item>
+        <item name="android:textColor">@color/colorSubSecondaryText</item>
         <item name="android:textStyle">bold</item>
     </style>
-
-    <style name="NavigationTab" parent="Widget.Design.TabLayout">
-        <item name="tabTextAppearance">@style/NavigationTabTextAppeareance</item>
-    </style>
-
-    <style name="NavigationTabTextAppeareance" parent="TextAppearance.Design.Tab">
-        <item name="android:textColor">@color/colorOrange</item>
-        <item name="android:textSize">12sp</item>
-    </style>-->
 </resources>

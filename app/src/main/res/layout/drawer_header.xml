@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="100dp"
+    android:layout_height="@dimen/drawer_header_height"
     android:background="@color/off_blue_two">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginBottom="@dimen/drawer_header_margin_bottom"
+        android:layout_marginLeft="@dimen/drawer_margin_left"
+        android:layout_marginTop="@dimen/drawer_header_margin_top"
         android:text="@string/e_contact"
         android:textColor="@color/colorWhite70"
-        android:textSize="24sp"
+        android:textSize="@dimen/drawer_header_text_size"
         android:textStyle="bold" />
 </FrameLayout>

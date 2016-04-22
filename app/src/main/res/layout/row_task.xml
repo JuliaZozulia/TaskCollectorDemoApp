@@ -2,39 +2,36 @@
 
 <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:cardView="http://schemas.android.com/apk/res-auto"
-    xmlns:fresco="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="126dp"
-    cardView:cardCornerRadius="8dp">
+    android:layout_height="@dimen/row_task_item_height"
+    cardView:cardCornerRadius="@dimen/row_task_corner_radius">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:background="?android:attr/selectableItemBackground">
+        android:background="?android:attr/selectableItemBackground"
+        android:orientation="horizontal">
 
         <RelativeLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1">
 
-
             <ImageView
                 android:id="@id/picture"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_width="@dimen/row_task_item_cat_image_h"
+                android:layout_height="@dimen/row_task_item_cat_image_h"
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
-                android:layout_margin="24dp"
-                />
+                android:layout_margin="@dimen/row_task_item_cat_image_margin" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true"
-                android:layout_marginBottom="16dp"
+                android:layout_marginBottom="@dimen/double_grid_step_padding"
                 android:orientation="horizontal">
 
                 <ImageView
@@ -46,9 +43,9 @@
                     android:id="@+id/plus"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:paddingLeft="8dp"
+                    android:paddingLeft="@dimen/base_padding"
                     android:textColor="@color/gray"
-                    android:textSize="18sp"
+                    android:textSize="@dimen/row_task_item_text_size"
                     tools:text="1" />
 
             </LinearLayout>
@@ -59,26 +56,26 @@
         <RelativeLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_margin="16dp"
+            android:layout_margin="@dimen/double_grid_step_padding"
             android:layout_weight="3">
 
             <TextView
                 android:id="@+id/title"
                 android:layout_width="match_parent"
-                android:layout_height="36dp"
+                android:layout_height="@dimen/row_task_item_title_h"
                 android:fontFamily="sans-serif-medium"
                 android:textColor="@color/colorPrimaryText"
-                android:textSize="16sp"
-                tools:text="Ремонт та обслуговування ліфтів" />
+                android:textSize="@dimen/row_task_item_title_text_size"
+                tools:text="@string/municipal" />
 
             <TextView
-                android:id="@+id/adress"
+                android:id="@+id/address"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/title"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                 android:textColor="@color/colorSubSecondaryText"
-                tools:text="ж/м Тополя-2" />
+                tools:text="@string/address_placeholder" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -89,29 +86,23 @@
                 <TextView
                     android:id="@+id/create_date"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-
-                    android:textColor="@color/colorSubSecondaryText"
-                    android:textStyle="bold"
-                    tools:text="16 квітня 2016" />
+                    android:layout_height="wrap_content"
+                    style="@style/TaskBottomText"
+                    tools:text="@string/date_placeholder" />
 
                 <TextView
                     android:id="@+id/days"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
-                    android:layout_marginRight="8dp"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                    android:textColor="@color/colorSubSecondaryText"
+                    style="@style/TaskBottomText"
                     android:textStyle="bold"
-                    tools:text="-14 днів" />
+                    tools:text="@string/days_placeholder" />
             </RelativeLayout>
         </RelativeLayout>
 
     </LinearLayout>
-
 
 </android.support.v7.widget.CardView>
 
