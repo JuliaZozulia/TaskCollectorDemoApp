@@ -22,7 +22,7 @@
  * SOFTWARE.
  */
 
-package ua.juliazozulia.taskcollector.UI.Main;
+package ua.juliazozulia.taskcollector.UI.Main; //[Comment] NEVER use upper-case in package names
 
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
     ViewPager mPager;
     TabLayout mTab;
     Drawer mDrawerResult;
-    Toolbar mToolbar;
+    Toolbar mToolbar; //[Comment] Wrong visibility modifiers
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -97,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
     private void setupTab() {
 
         final PagerAdapter pagerAdapter = new PagerAdapter(getSupportFragmentManager());
-        mTab.setTabsFromPagerAdapter(pagerAdapter);
+        mTab.setTabsFromPagerAdapter(pagerAdapter); //[Comment] Deprecated
 
         initTab();
 
@@ -144,7 +144,7 @@ public class MainActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                mToolbar.setNavigationIcon(getResources().getDrawable(R.drawable.ic_menu));
+                mToolbar.setNavigationIcon(getResources().getDrawable(R.drawable.ic_menu)); //[Comment] Deprecated method
             }
         }, 100);
     }

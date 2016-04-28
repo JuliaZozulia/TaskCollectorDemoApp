@@ -53,7 +53,7 @@ public class TaskListViewAdapter extends ArrayAdapter<Task> {
     @Override
     public View getView(int position, View convertView,
                         ViewGroup parent) {
-        View row = super.getView(position, convertView, parent);
+        View row = super.getView(position, convertView, parent); //[Comment] Bad. Use viewholder pattern
 
         Task item = getItem(position);
 
@@ -84,7 +84,7 @@ public class TaskListViewAdapter extends ArrayAdapter<Task> {
         TextView creteDate;
         TextView days;
         ImageView icon;
-        TextView plusCount;
+        TextView plusCount; //[Comment] Wrong names
 
         ViewHolder(View row) {
             title = (TextView) row.findViewById(R.id.title);

@@ -116,7 +116,7 @@ public class TaskRecycleViewAdapter extends RecyclerView.Adapter<TaskRecycleView
             Intent intent = new Intent(context, DetailActivity.class);
 
             intent.putExtra(DetailActivity.EXTRA_TASK, Integer.toString(TasksList.getInstance().indexOf(mItem)));
-            context.startActivity(intent);
+            context.startActivity(intent); //[Comment] Don't start activity from adapter
         }
     }
 }

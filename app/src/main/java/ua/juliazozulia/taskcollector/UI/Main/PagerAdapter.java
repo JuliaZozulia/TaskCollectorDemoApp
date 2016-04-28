@@ -38,7 +38,7 @@ public class PagerAdapter extends FragmentPagerAdapter {
     @Override
     public int getCount() {
         //wonder if I can get somehow number of stringDef constants
-        return (3);
+        return (3); //[Comment]  Why in braces?
     }
 
     @Override
