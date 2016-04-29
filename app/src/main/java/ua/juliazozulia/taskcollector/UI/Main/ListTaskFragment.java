@@ -22,7 +22,7 @@
  * SOFTWARE.
  */
 
-package ua.juliazozulia.taskcollector.UI.Main;
+package ua.juliazozulia.taskcollector.ui.main;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -33,12 +33,12 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
-import ua.juliazozulia.taskcollector.Model.Category;
-import ua.juliazozulia.taskcollector.Model.States;
-import ua.juliazozulia.taskcollector.Model.TasksList;
+import ua.juliazozulia.taskcollector.model.Category;
+import ua.juliazozulia.taskcollector.model.States;
+import ua.juliazozulia.taskcollector.model.TasksList;
 import ua.juliazozulia.taskcollector.R;
-import ua.juliazozulia.taskcollector.UI.HidingFloatingButton.HidingFloatingActionButton;
-import ua.juliazozulia.taskcollector.UI.Details.DetailActivity;
+import ua.juliazozulia.taskcollector.ui.hidingfloatingbutton.HidingFloatingActionButton;
+import ua.juliazozulia.taskcollector.ui.details.DetailActivity;
 
 public class ListTaskFragment extends Fragment {
     private static final String ARG_STATUS = "status";

@@ -22,7 +22,7 @@
  * SOFTWARE.
  */
 
-package ua.juliazozulia.taskcollector.UI.Details;
+package ua.juliazozulia.taskcollector.ui.details;
 
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
@@ -38,9 +38,9 @@ import android.widget.Toast;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 
-import ua.juliazozulia.taskcollector.Model.States;
-import ua.juliazozulia.taskcollector.Model.Task;
-import ua.juliazozulia.taskcollector.Model.TasksList;
+import ua.juliazozulia.taskcollector.model.States;
+import ua.juliazozulia.taskcollector.model.Task;
+import ua.juliazozulia.taskcollector.model.TasksList;
 import ua.juliazozulia.taskcollector.R;
 
 public class DetailActivity extends AppCompatActivity implements View.OnClickListener {

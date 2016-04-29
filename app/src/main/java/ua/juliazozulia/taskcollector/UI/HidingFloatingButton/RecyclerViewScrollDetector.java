@@ -22,7 +22,7 @@
  * SOFTWARE.
  */
 
-package ua.juliazozulia.taskcollector.UI.HidingFloatingButton;
+package ua.juliazozulia.taskcollector.ui.hidingfloatingbutton;
 
 import android.support.v7.widget.RecyclerView;
 

@@ -23,23 +23,22 @@
  * SOFTWARE.
  */
 
-package ua.juliazozulia.taskcollector.UI.Main;
+package ua.juliazozulia.taskcollector.ui.main;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import ua.juliazozulia.taskcollector.Model.Category;
-import ua.juliazozulia.taskcollector.Model.States;
-import ua.juliazozulia.taskcollector.Model.TasksList;
+import ua.juliazozulia.taskcollector.model.Category;
+import ua.juliazozulia.taskcollector.model.States;
+import ua.juliazozulia.taskcollector.model.TasksList;
 import ua.juliazozulia.taskcollector.R;
-import ua.juliazozulia.taskcollector.UI.HidingFloatingButton.HidingFloatingActionButton;
-import ua.juliazozulia.taskcollector.UI.Details.SpacesItemDecoration;
+import ua.juliazozulia.taskcollector.ui.hidingfloatingbutton.HidingFloatingActionButton;
+import ua.juliazozulia.taskcollector.ui.details.SpacesItemDecoration;
 
 public class RecyclerFragment extends Fragment {
     private static final String ARG_STATUS = "status";

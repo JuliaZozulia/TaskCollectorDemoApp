@@ -1,4 +1,4 @@
-package ua.juliazozulia.taskcollector.Model;
+package ua.juliazozulia.taskcollector.model;
 
 import android.content.Context;
 import android.support.annotation.StringDef;

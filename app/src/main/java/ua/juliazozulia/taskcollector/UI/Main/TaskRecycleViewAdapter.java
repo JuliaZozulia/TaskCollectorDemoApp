@@ -22,7 +22,7 @@
  * SOFTWARE.
  */
 
-package ua.juliazozulia.taskcollector.UI.Main;
+package ua.juliazozulia.taskcollector.ui.main;
 
 import android.content.Context;
 import android.content.Intent;
@@ -39,13 +39,13 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
-import ua.juliazozulia.taskcollector.Model.Task;
-import ua.juliazozulia.taskcollector.Model.TasksList;
+import ua.juliazozulia.taskcollector.model.Task;
+import ua.juliazozulia.taskcollector.model.TasksList;
 import ua.juliazozulia.taskcollector.R;
 import ua.juliazozulia.taskcollector.TaskApplication;
-import ua.juliazozulia.taskcollector.UI.Details.DetailActivity;
-import ua.juliazozulia.taskcollector.Utils.DateUtils;
-import ua.juliazozulia.taskcollector.Utils.HelperDrawableUtils;
+import ua.juliazozulia.taskcollector.ui.details.DetailActivity;
+import ua.juliazozulia.taskcollector.utils.DateUtils;
+import ua.juliazozulia.taskcollector.utils.HelperDrawableUtils;
 
 public class TaskRecycleViewAdapter extends RecyclerView.Adapter<TaskRecycleViewAdapter.ViewHolder> {
 

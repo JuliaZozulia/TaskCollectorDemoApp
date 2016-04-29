@@ -3,14 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UI.Main.RecyclerFragment">
+    tools:context=".ui.main.RecyclerFragment">
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/task_recycler_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-    <ua.juliazozulia.taskcollector.UI.HidingFloatingButton.HidingFloatingActionButton
+    <ua.juliazozulia.taskcollector.ui.hidingfloatingbutton.HidingFloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

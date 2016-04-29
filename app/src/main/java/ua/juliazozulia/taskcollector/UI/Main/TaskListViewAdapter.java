@@ -22,7 +22,7 @@
  * SOFTWARE.
  */
 
-package ua.juliazozulia.taskcollector.UI.Main;
+package ua.juliazozulia.taskcollector.ui.main;
 
 import android.app.Activity;
 import android.view.View;
@@ -38,11 +38,11 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
-import ua.juliazozulia.taskcollector.Model.Task;
 import ua.juliazozulia.taskcollector.R;
 import ua.juliazozulia.taskcollector.TaskApplication;
-import ua.juliazozulia.taskcollector.Utils.DateUtils;
-import ua.juliazozulia.taskcollector.Utils.HelperDrawableUtils;
+import ua.juliazozulia.taskcollector.model.Task;
+import ua.juliazozulia.taskcollector.utils.DateUtils;
+import ua.juliazozulia.taskcollector.utils.HelperDrawableUtils;
 
 public class TaskListViewAdapter extends ArrayAdapter<Task> {
 
@@ -53,16 +53,16 @@ public class TaskListViewAdapter extends ArrayAdapter<Task> {
     @Override
     public View getView(int position, View convertView,
                         ViewGroup parent) {
-        View row = super.getView(position, convertView, parent);
+        ViewHolder holder;
+        if (convertView == null) {
+            holder = new ViewHolder(super.getView(position, convertView, parent));
+            convertView.setTag(holder);
 
+        } else {
+            holder = (ViewHolder) convertView.getTag();
+        }
         Task item = getItem(position);
 
-        ViewHolder holder = (ViewHolder) row.getTag();
-
-        if (holder == null) {
-            holder = new ViewHolder(row);
-            row.setTag(holder);
-        }
         holder.icon.setImageDrawable(HelperDrawableUtils.getDrawable(item.getCategory()));
         holder.title.setText(item.getCategoryName(getContext()));
         holder.address.setText(item.getAddress());
@@ -75,7 +75,7 @@ public class TaskListViewAdapter extends ArrayAdapter<Task> {
                         DateUtils.getDifferenceDays(currentDate, dueDate)));
         holder.plusCount.setText(Integer.toString(item.getPlusCount()));
 
-        return (row);
+        return (convertView);
     }
 
     class ViewHolder {

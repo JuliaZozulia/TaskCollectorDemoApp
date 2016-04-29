@@ -22,7 +22,7 @@
  * SOFTWARE.
  */
 
-package ua.juliazozulia.taskcollector.Utils;
+package ua.juliazozulia.taskcollector.utils;
 
 import java.util.Date;
 import java.util.concurrent.TimeUnit;

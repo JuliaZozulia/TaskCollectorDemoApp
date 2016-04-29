@@ -22,13 +22,11 @@
  * SOFTWARE.
  */
 
-package ua.juliazozulia.taskcollector.UI.Details;
+package ua.juliazozulia.taskcollector.ui.details;
 
 import android.graphics.Rect;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
-
-import ua.juliazozulia.taskcollector.TaskApplication;
 
 /**
  * Adds spaces to RecycleView with horizontal orientation

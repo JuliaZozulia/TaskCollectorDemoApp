@@ -22,7 +22,7 @@
  * SOFTWARE.
  */
 
-package ua.juliazozulia.taskcollector.Utils;
+package ua.juliazozulia.taskcollector.utils;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;

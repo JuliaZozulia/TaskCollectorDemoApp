@@ -21,13 +21,13 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package ua.juliazozulia.taskcollector.UI.Main;
+package ua.juliazozulia.taskcollector.ui.main;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
-import ua.juliazozulia.taskcollector.Model.States;
+import ua.juliazozulia.taskcollector.model.States;
 
 public class PagerAdapter extends FragmentPagerAdapter {
 
@@ -38,7 +38,7 @@ public class PagerAdapter extends FragmentPagerAdapter {
     @Override
     public int getCount() {
         //wonder if I can get somehow number of stringDef constants
-        return (3);
+        return 3;
     }
 
     @Override

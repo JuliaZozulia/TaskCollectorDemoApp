@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package ua.juliazozulia.taskcollector.UI.Details;
+package ua.juliazozulia.taskcollector.ui.details;
 
 import android.net.Uri;
 import android.support.v7.widget.RecyclerView;

@@ -22,7 +22,7 @@
  * SOFTWARE.
  */
 
-package ua.juliazozulia.taskcollector.Model;
+package ua.juliazozulia.taskcollector.model;
 
 import android.content.Context;
 

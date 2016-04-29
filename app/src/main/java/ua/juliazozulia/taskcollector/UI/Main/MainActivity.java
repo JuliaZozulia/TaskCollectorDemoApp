@@ -22,12 +22,13 @@
  * SOFTWARE.
  */
 
-package ua.juliazozulia.taskcollector.UI.Main;
+package ua.juliazozulia.taskcollector.ui.main;
 
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.design.widget.TabLayout;
+import android.support.v4.content.res.ResourcesCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -48,10 +49,10 @@ import ua.juliazozulia.taskcollector.R;
 
 public class MainActivity extends AppCompatActivity {
 
-    ViewPager mPager;
-    TabLayout mTab;
-    Drawer mDrawerResult;
-    Toolbar mToolbar;
+    private ViewPager mPager;
+    private TabLayout mTab;
+    private Drawer mDrawerResult;
+    private Toolbar mToolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -95,29 +96,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setupTab() {
-
         final PagerAdapter pagerAdapter = new PagerAdapter(getSupportFragmentManager());
-        mTab.setTabsFromPagerAdapter(pagerAdapter);
-
-        initTab();
-
-        mTab.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
-            @Override
-            public void onTabSelected(TabLayout.Tab tab) {
-                mPager.setCurrentItem(tab.getPosition());
-            }
-
-            @Override
-            public void onTabUnselected(TabLayout.Tab tab) {
-            }
-
-            @Override
-            public void onTabReselected(TabLayout.Tab tab) {
-            }
-        });
-
         mPager.setAdapter(pagerAdapter);
-        mPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(mTab));
+        mTab.setupWithViewPager(mPager);
+        initTab();
     }
 
     private void bindViews() {
@@ -144,7 +126,7 @@ public class MainActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                mToolbar.setNavigationIcon(getResources().getDrawable(R.drawable.ic_menu));
+                mToolbar.setNavigationIcon(ResourcesCompat.getDrawable(getResources(), R.drawable.ic_menu, null));
             }
         }, 100);
     }
