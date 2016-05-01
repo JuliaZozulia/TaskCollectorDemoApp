@@ -24,8 +24,7 @@
 
 package ua.juliazozulia.taskcollector.ui.main;
 
-import android.content.Context;
-import android.content.Intent;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -39,20 +38,23 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
-import ua.juliazozulia.taskcollector.model.Task;
-import ua.juliazozulia.taskcollector.model.TasksList;
+import ua.juliazozulia.taskcollector.OnTaskItemClick;
 import ua.juliazozulia.taskcollector.R;
 import ua.juliazozulia.taskcollector.TaskApplication;
-import ua.juliazozulia.taskcollector.ui.details.DetailActivity;
+import ua.juliazozulia.taskcollector.model.Task;
+import ua.juliazozulia.taskcollector.model.TasksList;
 import ua.juliazozulia.taskcollector.utils.DateUtils;
 import ua.juliazozulia.taskcollector.utils.HelperDrawableUtils;
 
 public class TaskRecycleViewAdapter extends RecyclerView.Adapter<TaskRecycleViewAdapter.ViewHolder> {
 
     private List<Task> mDataset;
+    private OnTaskItemClick mOnAdapterClick;
 
-    public TaskRecycleViewAdapter(List<Task> dataset) {
+
+    public TaskRecycleViewAdapter(List<Task> dataset, OnTaskItemClick listener) {
         mDataset = dataset;
+        mOnAdapterClick = listener;
     }
 
     @Override
@@ -64,7 +66,7 @@ public class TaskRecycleViewAdapter extends RecyclerView.Adapter<TaskRecycleView
     }
 
     @Override
-    public void onBindViewHolder(ViewHolder holder, int position) {
+    public void onBindViewHolder(ViewHolder holder, final int position) {
         holder.icon.setImageDrawable(HelperDrawableUtils.getDrawable(mDataset.get(position).getCategory()));
         holder.title.setText(mDataset.get(position).getCategoryName(TaskApplication.getInstance()));
         holder.address.setText(mDataset.get(position).getAddress());
@@ -75,8 +77,13 @@ public class TaskRecycleViewAdapter extends RecyclerView.Adapter<TaskRecycleView
         holder.days.setText(
                 String.format(TaskApplication.getInstance().getResources().getString(R.string.days),
                         DateUtils.getDifferenceDays(currentDate, dueDate)));
-        holder.plusCount.setText(Integer.toString(mDataset.get(position).getPlusCount()));
-        holder.setItem(mDataset.get(position));
+        holder.plusCount.setText(Integer.toString(mDataset.get(position).getLikes()));
+        holder.cardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mOnAdapterClick.onTaskClick(TasksList.getInstance().indexOf(mDataset.get(position)));
+            }
+        });
     }
 
     @Override
@@ -85,38 +92,24 @@ public class TaskRecycleViewAdapter extends RecyclerView.Adapter<TaskRecycleView
     }
 
 
-    public static class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-        private final Context context;
+    public static class ViewHolder extends RecyclerView.ViewHolder {
+        CardView cardView;
         TextView title;
         TextView address;
         TextView creteDate;
         TextView days;
         ImageView icon;
         TextView plusCount;
-        private Task mItem;
 
         public ViewHolder(View row) {
             super(row);
-            context = row.getContext();
+            cardView = (CardView) row.findViewById(R.id.card_view);
             title = (TextView) row.findViewById(R.id.title);
             address = (TextView) row.findViewById(R.id.address);
             creteDate = (TextView) row.findViewById(R.id.create_date);
             days = (TextView) row.findViewById(R.id.days);
             icon = (ImageView) row.findViewById(R.id.picture);
             plusCount = (TextView) row.findViewById(R.id.plus);
-            row.setOnClickListener(this);
-        }
-
-        public void setItem(Task item) {
-            mItem = item;
-        }
-
-        @Override
-        public void onClick(View v) {
-            Intent intent = new Intent(context, DetailActivity.class);
-
-            intent.putExtra(DetailActivity.EXTRA_TASK, Integer.toString(TasksList.getInstance().indexOf(mItem)));
-            context.startActivity(intent);
         }
     }
 }

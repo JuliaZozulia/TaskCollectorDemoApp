@@ -25,6 +25,8 @@
 package ua.juliazozulia.taskcollector.ui.main;
 
 import android.app.Activity;
+import android.content.Context;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
@@ -53,11 +55,15 @@ public class TaskListViewAdapter extends ArrayAdapter<Task> {
     @Override
     public View getView(int position, View convertView,
                         ViewGroup parent) {
-        ViewHolder holder;
-        if (convertView == null) {
-            holder = new ViewHolder(super.getView(position, convertView, parent));
-            convertView.setTag(holder);
 
+        final ViewHolder holder;
+
+        if (convertView == null) {
+            LayoutInflater inflater = (LayoutInflater) parent.getContext()
+                    .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            convertView = inflater.inflate(R.layout.row_task, parent, false);
+            holder = new ViewHolder(convertView);
+            convertView.setTag(holder);
         } else {
             holder = (ViewHolder) convertView.getTag();
         }
@@ -73,7 +79,7 @@ public class TaskListViewAdapter extends ArrayAdapter<Task> {
         holder.days.setText(
                 String.format(TaskApplication.getInstance().getResources().getString(R.string.days),
                         DateUtils.getDifferenceDays(currentDate, dueDate)));
-        holder.plusCount.setText(Integer.toString(item.getPlusCount()));
+        holder.likes.setText(Integer.toString(item.getLikes()));
 
         return (convertView);
     }
@@ -84,7 +90,7 @@ public class TaskListViewAdapter extends ArrayAdapter<Task> {
         TextView creteDate;
         TextView days;
         ImageView icon;
-        TextView plusCount;
+        TextView likes;
 
         ViewHolder(View row) {
             title = (TextView) row.findViewById(R.id.title);
@@ -92,7 +98,7 @@ public class TaskListViewAdapter extends ArrayAdapter<Task> {
             creteDate = (TextView) row.findViewById(R.id.create_date);
             days = (TextView) row.findViewById(R.id.days);
             icon = (ImageView) row.findViewById(R.id.picture);
-            plusCount = (TextView) row.findViewById(R.id.plus);
+            likes = (TextView) row.findViewById(R.id.plus);
         }
     }
 }

@@ -46,7 +46,7 @@ public class Task {
     private String mResponsible;
     private List<String> mPictures;
     private String mDescription;
-    private Integer mPlusCount;
+    private Integer mLikes;
     private String mAddress;
 
     public String getAddress() {
@@ -101,7 +101,7 @@ public class Task {
         return mState;
     }
 
-    public Integer getPlusCount() {
-        return mPlusCount;
+    public Integer getLikes() {
+        return mLikes;
     }
 }

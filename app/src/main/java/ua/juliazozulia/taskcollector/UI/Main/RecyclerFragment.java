@@ -1,4 +1,3 @@
-
 /*
  * The MIT License (MIT)
  *
@@ -25,6 +24,7 @@
 
 package ua.juliazozulia.taskcollector.ui.main;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
@@ -33,14 +33,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import ua.juliazozulia.taskcollector.OnTaskItemClick;
+import ua.juliazozulia.taskcollector.R;
 import ua.juliazozulia.taskcollector.model.Category;
 import ua.juliazozulia.taskcollector.model.States;
 import ua.juliazozulia.taskcollector.model.TasksList;
-import ua.juliazozulia.taskcollector.R;
-import ua.juliazozulia.taskcollector.ui.hidingfloatingbutton.HidingFloatingActionButton;
+import ua.juliazozulia.taskcollector.ui.details.DetailActivity;
 import ua.juliazozulia.taskcollector.ui.details.SpacesItemDecoration;
+import ua.juliazozulia.taskcollector.ui.hidingfloatingbutton.HidingFloatingActionButton;
 
-public class RecyclerFragment extends Fragment {
+public class RecyclerFragment extends Fragment implements OnTaskItemClick {
     private static final String ARG_STATUS = "status";
     @Category.TaskCategory
     private String mStatus;
@@ -93,6 +95,13 @@ public class RecyclerFragment extends Fragment {
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
         mRecyclerView.setLayoutManager(layoutManager);
         mRecyclerView.addItemDecoration(new SpacesItemDecoration((int) getResources().getDimension(R.dimen.base_padding), true));
-        mRecyclerView.setAdapter(new TaskRecycleViewAdapter(TasksList.getTasks(mStatus)));
+        mRecyclerView.setAdapter(new TaskRecycleViewAdapter(TasksList.getTasks(mStatus), this));
+    }
+
+    @Override
+    public void onTaskClick(int task) {
+        Intent intent = new Intent(getActivity(), DetailActivity.class);
+        intent.putExtra(DetailActivity.EXTRA_TASK, Integer.toString(task));
+        startActivity(intent);
     }
 }

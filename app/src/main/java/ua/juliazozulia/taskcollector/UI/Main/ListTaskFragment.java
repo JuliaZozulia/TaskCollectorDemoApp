@@ -33,12 +33,12 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+import ua.juliazozulia.taskcollector.R;
 import ua.juliazozulia.taskcollector.model.Category;
 import ua.juliazozulia.taskcollector.model.States;
 import ua.juliazozulia.taskcollector.model.TasksList;
-import ua.juliazozulia.taskcollector.R;
-import ua.juliazozulia.taskcollector.ui.hidingfloatingbutton.HidingFloatingActionButton;
 import ua.juliazozulia.taskcollector.ui.details.DetailActivity;
+import ua.juliazozulia.taskcollector.ui.hidingfloatingbutton.HidingFloatingActionButton;
 
 public class ListTaskFragment extends Fragment {
     private static final String ARG_STATUS = "status";
@@ -99,5 +99,4 @@ public class ListTaskFragment extends Fragment {
             }
         });
     }
-
 }
